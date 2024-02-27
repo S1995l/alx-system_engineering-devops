@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Installs and configures nginx
+
+# Update package lists
+sudo apt-get -y update
+
+# Install nginx
+sudo apt-get -y install nginx
+
+# Create index file with "Hello World!" content
+echo "Hello World!" | sudo tee "/var/www/html/index.nginx-debian.html"
+
+# Start nginx service
+sudo service nginx start
