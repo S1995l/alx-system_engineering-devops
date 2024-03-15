@@ -1,3 +1,3 @@
-#!/user/bin/env bash
-#start apache2 inside docker
+#!/usr/bin/env bash
+# Fix Apache to return "Hello Holberton" page
 service apache2 start
